@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    build: ./backend
+    image: lakshjain1/docker_assignment-backend:latest
     container_name: flask_backend
     ports:
       - "5000:5000"
@@ -10,7 +10,7 @@ services:
       - app-network
 
   frontend:
-    build: ./frontend
+    image: lakshjain1/docker_assignment-frontend:latest
     container_name: node_frontend
     ports:
       - "3000:3000"
