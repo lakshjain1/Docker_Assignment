@@ -1,12 +1,12 @@
-
 FROM node:18
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
-
 COPY . .
+
+RUN npm init
+
+RUN npm install express
 
 EXPOSE 3000
 
