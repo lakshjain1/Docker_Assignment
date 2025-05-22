@@ -9,4 +9,4 @@ def handle_submit():
     return f"<h2>Received data from frontend:</h2><p>Name: {name}</p><p>Email: {email}</p>"
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=5000, debug=True, host='0.0.0.0')
